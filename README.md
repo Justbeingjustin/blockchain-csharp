@@ -47,7 +47,23 @@ TODO
 ### Wallet Balance
 TODO
 ```
-TODO
+using Blockchain.Services;
+using System;
+
+namespace ConsoleApp1
+{
+    public class Program
+    {
+        private static void Main(string[] args)
+        {
+            var walletAddress = "385cR5DM96n1HvBDMzLHPYcw89fZAXULJP";
+            var walletRepository = new WalletRepository("API_KEY", walletAddress);
+            var wallet = walletRepository.GetBalance();
+            Console.WriteLine(wallet.FinalBalance);
+            Console.ReadLine();
+        }
+    }
+}
 ```
 
 
