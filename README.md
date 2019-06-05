@@ -45,7 +45,6 @@
 TODO
 
 ### Wallet Balance
-TODO
 ```
 using Blockchain.Services;
 using System;
